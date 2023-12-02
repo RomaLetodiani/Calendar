@@ -4,3 +4,33 @@
   box-sizing: border-box;
   font-family: 'Firago', sans-serif;
 }
+
+.content {
+  width: 100%;
+  min-width: 280px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3a3a3a;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 280px;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar {
+  width: 360px;
+  height: 360px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ccf8ff;
+  box-shadow: 0 0 10px 0px #636363;
+  background-image: linear-gradient(300deg, #a1c4fd 0%, #c2e9fb 100%);
+}
