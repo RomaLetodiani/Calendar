@@ -49,7 +49,7 @@ const InputDiv = ({ year, month, day, setDate }: Props) => {
       >
         <span style={{ width: '12ch' }}>
           {`${day < 10 ? `0${day}` : day}/${
-            month < 10 ? `0${month + 1}` : month + 1
+            month < 9 ? `0${month + 1}` : month + 1
           }/${year} `}
         </span>
         <CalendarOutlined />
