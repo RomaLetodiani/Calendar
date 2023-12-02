@@ -3,6 +3,7 @@ import { days, leapDays, months } from './shared/Consts';
 import Header from './header/Header';
 import Main from './main/Main';
 import { Flex } from 'antd';
+import InputDiv from './Input';
 
 const Calendar = () => {
   const today = new Date();
@@ -31,7 +32,7 @@ const Calendar = () => {
 
   return (
     <Flex vertical gap={32}>
-      <h1>Calendar</h1>
+      <InputDiv year={year} month={month} day={day} setDate={setDate} />
       <div className="calendar">
         <Header
           month={months[month]}
